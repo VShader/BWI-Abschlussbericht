@@ -1,5 +1,7 @@
 *.pdf
 *.aux
 *.log
+*.lof
+*.toc
 *.synctex.gz
 *.pdf_tex
