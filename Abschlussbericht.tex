@@ -9,6 +9,7 @@
 \usepackage{transparent}
 \graphicspath{./img}
 \usepackage{pdfpages}
+\usepackage[section]{placeins}
 
 
 \title{BWI Abschlussbericht Gruppe A Unternehmen 4}
@@ -20,13 +21,14 @@ Hoetz, Marcel, Matr.-Nr. 3}
 
 \begin{document}
 
+\pagenumbering{gobble}
 \maketitle
 \tableofcontents
 
 
-
 \begin{flushleft}
 \chapter{Strategie}
+\pagenumbering{arabic}
 Unsere Strategie bestand darin einen großen Absatz zu erreichen. 
 Um dieses Ziel zu erreichen, haben wir in der ersten Periode mehr Maschinen gekauft und Personal eingestellt. 
 Wir haben einen konstant niedrigen Preis gewählt um möglichst viel Ware zu verkaufen und haben diesen dann an die jeweiligen Perioden anzupassen. 
@@ -146,7 +148,21 @@ So konnten die anderen Unternehmen ihre Zelte zu einem höheren Preis verkaufen.
   \caption[Quotient]{Quotient}
 \end{figure}
 
-\includepdf[noautoscale, pages=-]{./img/Anhang.pdf} 
+
+ \begin{figure}
+ \includegraphics [width=1.3\textwidth]{./img/Anhang.pdf}
+  \caption[Kennzahlen Periode 1-3]{Kennzahlen Periode 1-3}
+\end{figure}
+ \begin{figure}
+ \includegraphics [width=1.3\textwidth, page=2]{./img/Anhang.pdf}
+  \caption[Kennzahlen Periode 4-6]{Kennzahlen Periode 4-6}
+\end{figure}
+ \begin{figure}
+ \includegraphics [width=1.3\textwidth, page=3]{./img/Anhang.pdf}
+  \caption[Kennzahlen Periode 7]{Kennzahlen Periode 7}
+\end{figure}
+
+%\includepdf[noautoscale, pages=-]{./img/Anhang.pdf} 
 
 
 \chapter{Kritische Würdigung der Strategie}
@@ -208,9 +224,33 @@ Einziger Verbesserungspunkt wäre ein gemeinsamer Zugriff auf die Dropbox gewese
 %\includepdf[noautoscale]{./img/Periodenueberschuss.pdf}
 %\includepdf[noautoscale]{./img/Quotient.pdf}
 
-
-\includepdf[noautoscale, pages=-]{./img/TopSim_Anhang.pdf}
- 
+\begin{center}
+%\includepdf[noautoscale, pages=-]{./img/TopSim_Anhang.pdf}
+\begin{figure}
+ \includegraphics [width=1.3\textwidth, page=1]{./img/TopSim_Anhang.pdf}
+  \caption[Absatz]{Absatz}
+\end{figure}
+ \begin{figure}
+ \includegraphics [width=1.3\textwidth, page=2]{./img/TopSim_Anhang.pdf}
+  \caption[Personalkosten]{Personalkosten}
+\end{figure}
+ \begin{figure}
+ \includegraphics [width=1.3\textwidth, page=3]{./img/TopSim_Anhang.pdf}
+  \caption[Kostenartenrechnung]{Kostenartenrechnung}
+\end{figure}
+\begin{figure}
+ \includegraphics [width=1.3\textwidth, page=4]{./img/TopSim_Anhang.pdf}
+  \caption[Kostenartenrechnung]{Kostenartenrechnung}
+\end{figure}
+ \begin{figure}
+ \includegraphics [width=1.3\textwidth, page=5]{./img/TopSim_Anhang.pdf}
+  \caption[Kostenstellenrechnung]{Kostenstellenrechnung}
+\end{figure}
+ \begin{figure}
+ \includegraphics [width=1.3\textwidth, page=6]{./img/TopSim_Anhang.pdf}
+  \caption[Kostenträgerrechnung]{Kostenträgerrechnung}
+\end{figure}
+\end{center} 
  \listoffigures
  
 %
